@@ -1,0 +1,7 @@
+C:\Users\Юра Костик\source\repos\LNUProject\LNUProjectDTO\bin\Debug\LNUProjectDTO.exe.config
+C:\Users\Юра Костик\source\repos\LNUProject\LNUProjectDTO\bin\Debug\LNUProjectDTO.exe
+C:\Users\Юра Костик\source\repos\LNUProject\LNUProjectDTO\bin\Debug\LNUProjectDTO.pdb
+C:\Users\Юра Костик\source\repos\LNUProject\LNUProjectDTO\obj\Debug\LNUProjectDTO.csprojAssemblyReference.cache
+C:\Users\Юра Костик\source\repos\LNUProject\LNUProjectDTO\obj\Debug\LNUProjectDTO.csproj.CoreCompileInputs.cache
+C:\Users\Юра Костик\source\repos\LNUProject\LNUProjectDTO\obj\Debug\LNUProjectDTO.exe
+C:\Users\Юра Костик\source\repos\LNUProject\LNUProjectDTO\obj\Debug\LNUProjectDTO.pdb
