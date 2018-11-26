@@ -10,28 +10,50 @@ using System.Windows.Forms;
 using LNUProjectBLL.Services;
 using LNUProjectBLL.Interface;
 using LNUProjectDTO;
+using LNUProjectBLL.Interfaces;
+using Unity;
+using LNUProject.UnitOfWork;
 
 namespace LNUProjectBLL
 {
     public partial class Form1 : Form
     {
-        IRoleService RoleService;
-        public Form1(IRoleService r)
+        
+        private readonly IUserService userService;
+        private readonly IUnitOfWork unitOfWork;
+        public Form1()
         {
             InitializeComponent();
-            RoleService=r;
+        }
+        public Form1(IUserService userService, IUnitOfWork unitOfWork):this()
+        {
+            this.userService = userService;
+            this.unitOfWork = unitOfWork;
         }
         
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var UsersLogin = userService.SignIn();
+            foreach (var user in UsersLogin)
+            {
+                if (user.Email == textBox1.Text && user.Password == textBox2.Text)
+                {
+                    Form2 form2 = new Form2();
+                    this.Hide();
+                    form2.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Enter the correct data");
+                }
+            }
+            
+        }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            string email = textBox1.Text;
-            List<RoleDTO> roles = RoleService.GetAllRoles();
-            foreach(var role in roles)
-            {
-                if(email == role.Name)
 
-            }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -39,9 +61,5 @@ namespace LNUProjectBLL
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

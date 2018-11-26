@@ -8,10 +8,10 @@ namespace LNUProjectDTO
 {
     public class UserLoginDTO
     {
-        public UserLoginDTO(string email, string password)
+        public UserLoginDTO()
         {
-            Email = email;
-            Password = password;
+            //Email = email;
+            //Password = password;
         }
         public string Email { get; set; }
         public string Password { get; set; }

@@ -16,5 +16,6 @@ namespace LNUProjectBLL.Interfaces
         UserDTO GetByEmail(string email);
         ImageDTO GetImage(int id);
         List<UserDTO> GetByRole(int roleid);
+        List<UserLoginDTO> SignIn();
     }
 }

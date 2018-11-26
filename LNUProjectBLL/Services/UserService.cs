@@ -112,5 +112,24 @@ namespace LNUProjectBLL.Services
             }
             return dtos;
         }
+
+        public List<UserLoginDTO> SignIn()
+        {
+            var users = db.Users.GetAll();
+            if (users == null)
+                return null;
+            var dtos = new List<UserLoginDTO>();
+            foreach (var user in users)
+            {
+                dtos.Add(new UserLoginDTO()
+                {
+                    Email= user.Email,
+                    Password = user.Password
+                });
+            }
+              
+            
+            return dtos;
+        }
     }
 }
