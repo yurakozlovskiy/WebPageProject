@@ -35,20 +35,22 @@ namespace LNUProjectBLL
         private void button1_Click(object sender, EventArgs e)
         {
             var UsersLogin = userService.SignIn();
+            bool authorized = false;
             foreach (var user in UsersLogin)
             {
                 if (user.Email == textBox1.Text && user.Password == textBox2.Text)
                 {
+                    this.Close();
                     Form2 form2 = new Form2();
-                    this.Hide();
+                    authorized = true;
                     form2.Show();
                 }
-                else
-                {
-                    MessageBox.Show("Enter the correct data");
-                }
             }
-            
+            if(authorized == false)
+            {
+                MessageBox.Show("Enter the correct data");
+            }
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -61,5 +63,9 @@ namespace LNUProjectBLL
 
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
