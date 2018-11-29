@@ -12,3 +12,10 @@ C:\Users\Юра Костик\Desktop\LNUProject\LNUProjectDTO\obj\Debug\LNUProje
 C:\Users\Юра Костик\Desktop\LNUProject\LNUProjectDTO\bin\Debug\LNUProjectDTO.exe.config
 C:\Users\Юра Костик\Desktop\LNUProject\LNUProjectDTO\bin\Debug\LNUProjectDTO.exe
 C:\Users\Юра Костик\Desktop\LNUProject\LNUProjectDTO\bin\Debug\LNUProjectDTO.pdb
+C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectDTO\bin\Debug\LNUProjectDTO.exe.config
+C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectDTO\bin\Debug\LNUProjectDTO.exe
+C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectDTO\bin\Debug\LNUProjectDTO.pdb
+C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectDTO\obj\Debug\LNUProjectDTO.csprojAssemblyReference.cache
+C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectDTO\obj\Debug\LNUProjectDTO.csproj.CoreCompileInputs.cache
+C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectDTO\obj\Debug\LNUProjectDTO.exe
+C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectDTO\obj\Debug\LNUProjectDTO.pdb

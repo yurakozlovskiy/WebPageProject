@@ -20,14 +20,15 @@ namespace LNUProjectBLL
         [STAThread]
         static void Main()
         {
-            var container = new UnityContainer();
+            /*var container = new UnityContainer();
 
             
             container.RegisterType<IAddressService, AddressService>();
             container.RegisterType<ICategoryService, CategoryService>();
             container.RegisterType<IRoleService,RoleService>();
             container.RegisterType<IUserService, UserService>();
-            container.RegisterType<IUnitOfWork, UnitOfWork>();
+            container.RegisterType<IUnitOfWork, UnitOfWork>();*/
+            var container = Boostraper.Init();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

@@ -54,6 +54,7 @@
     <Compile Include="RoleDTO.cs" />
     <Compile Include="UserDTO.cs" />
     <Compile Include="UserLoginDTO.cs" />
+    <Compile Include="ValidationRules.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

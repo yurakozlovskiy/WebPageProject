@@ -113,7 +113,7 @@ namespace LNUProjectBLL.Services
             return dtos;
         }
 
-        public List<UserLoginDTO> SignIn()
+        public List<UserLoginDTO> GetUserLoginDTO()
         {
             var users = db.Users.GetAll();
             if (users == null)

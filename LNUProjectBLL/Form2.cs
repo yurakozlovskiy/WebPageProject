@@ -7,24 +7,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Unity;
 
 namespace LNUProjectBLL
 {
     public partial class Form2 : Form
     {
+        private IUnityContainer container;
         public Form2()
         {
             InitializeComponent();
+            container = Boostraper.Init();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form1 form1 = new Form1();
+            Form form1 = container.Resolve<Form1>();
             form1.Show();
+           
         }
 
         private void Form2_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }
