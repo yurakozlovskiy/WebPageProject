@@ -46,9 +46,9 @@ namespace LNUProjectBLL
                 if (user.Email == textBox1.Text && user.Password == textBox2.Text)
                 {
                     this.Hide();
-                    //Form2 form2 = new Form2();
+                    
                     Form form2 = container.Resolve<Form2>();
-
+                    EmailDTO.Email = textBox1.Text;
                     authorized = true;
                     form2.Show();
                 }
@@ -123,6 +123,11 @@ namespace LNUProjectBLL
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
