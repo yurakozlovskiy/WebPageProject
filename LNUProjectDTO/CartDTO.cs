@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace LNUProjectDTO
 {
-    class CartDTO
+    public class CartDTO
     {
+        public CartDTO(int id, string username, string sellername)
+        {
+            Id = id;
+            UserName = username;
+            SellerName = sellername;
+        }
+        public int Id { get; set; }
+        public string UserName { get; set; }
+        public string SellerName { get; set; }
     }
 }

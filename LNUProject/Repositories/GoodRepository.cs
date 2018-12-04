@@ -18,6 +18,15 @@ namespace LNUProject.Repositories
         {
             return Context.Goods.FirstOrDefault(good => good.Id == id);
         }
-        
+
+        public Good GetByName(string name)
+        {
+            return Context.Goods.FirstOrDefault(r => r.Name == name);
+        }
+
+        public IEnumerable<Good> GetGoodsByCategory(int categoryid)
+        {
+            return Context.Goods.Where(good => good.CategoryId == categoryid).ToList();
+        }
     }
 }

@@ -8,16 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Unity;
+using LNUProjectDTO;
+using LNUProjectBLL.Interfaces;
 
 namespace LNUProjectBLL
 {
     public partial class Form2 : Form
     {
+        private readonly IUserService userService;
+        private readonly ICartService cartService;
         private IUnityContainer container;
-        public Form2()
+        
+        public Form2(IUserService userService)
         {
             InitializeComponent();
+            this.userService = userService;
             container = Boostraper.Init();
+            ProfileDetails(userService);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,15 +37,36 @@ namespace LNUProjectBLL
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            
+            this.Close();
+             
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Form3 form3 = container.Resolve<Form3>();
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public int GetProfileId()
+        {
+            string email = EmailDTO.Email;
+            var user = userService.GetByEmail(email);
+            return user.Id;
+               
+        }
+
+        public void ProfileDetails(IUserService userService)
+        {
+            string email = EmailDTO.Email;
+            var user = userService.GetByEmail(email);
+            label1.Text = "Welcome back, " + user.Firstname+"!";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }

@@ -86,7 +86,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(18, 206);
+            this.button1.Location = new System.Drawing.Point(29, 206);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(105, 41);
             this.button1.TabIndex = 5;
@@ -99,7 +99,7 @@
             this.textBox2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(29, 148);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(207, 22);
+            this.textBox2.Size = new System.Drawing.Size(224, 22);
             this.textBox2.TabIndex = 4;
             this.textBox2.UseSystemPasswordChar = true;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -120,7 +120,7 @@
             this.textBox1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.textBox1.Location = new System.Drawing.Point(29, 68);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(207, 22);
+            this.textBox1.Size = new System.Drawing.Size(224, 22);
             this.textBox1.TabIndex = 2;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -147,7 +147,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(164, 206);
+            this.button2.Location = new System.Drawing.Point(148, 207);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(105, 40);
             this.button2.TabIndex = 9;

@@ -32,7 +32,7 @@ namespace LNUProjectBLL
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(container.Resolve<Form1>());
+            Application.Run(container.Resolve<Form3>());
         }
     }
 }

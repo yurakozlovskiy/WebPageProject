@@ -30,8 +30,9 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +48,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
@@ -56,25 +58,34 @@
             this.panel1.Size = new System.Drawing.Size(800, 450);
             this.panel1.TabIndex = 1;
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(279, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(230, 35);
+            this.label1.TabIndex = 2;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(149, 336);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(128, 47);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Products";
+            this.button2.Text = "Selling goods";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label1
+            // button3
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(333, 67);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 28);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Welcome!\r\n";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.button3.Location = new System.Drawing.Point(605, 65);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(122, 47);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "New offer";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form2
             // 
@@ -96,5 +107,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button3;
     }
 }

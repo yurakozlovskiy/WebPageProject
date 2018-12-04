@@ -10,5 +10,7 @@ namespace LNUProject.Repositories.Interfaces
     public interface IGoodRepository:IRepository<Good>
     {
         Good Get(int id);
+        Good GetByName(string name);
+        IEnumerable<Good> GetGoodsByCategory(int categoryid);
     }
 }

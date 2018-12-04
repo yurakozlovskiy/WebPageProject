@@ -94,3 +94,4 @@ C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectBLL\obj\Debug\LNUP
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectBLL\obj\Debug\LNUProjectBLL.csproj.CopyComplete
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectBLL\obj\Debug\LNUProjectBLL.exe
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectBLL\obj\Debug\LNUProjectBLL.pdb
+C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectBLL\obj\Debug\LNUProjectBLL.Form3.resources

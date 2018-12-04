@@ -46,9 +46,9 @@ namespace LNUProjectBLL
                 if (user.Email == textBox1.Text && user.Password == textBox2.Text)
                 {
                     this.Hide();
-                    
-                    Form form2 = container.Resolve<Form2>();
                     EmailDTO.Email = textBox1.Text;
+                    Form form2 = container.Resolve<Form2>();
+   
                     authorized = true;
                     form2.Show();
                 }
