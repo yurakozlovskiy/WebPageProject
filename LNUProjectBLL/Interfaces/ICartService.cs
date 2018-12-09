@@ -13,6 +13,6 @@ namespace LNUProjectBLL.Interfaces
     {
         CartDTO Get(int id);
         List<CartDTO> GetAll();
-        List<CartDTO> GetCartByUser(int userid);
+        CartDTO GetCartByUser(int userid);
     }
 }

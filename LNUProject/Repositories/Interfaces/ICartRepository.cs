@@ -11,6 +11,6 @@ namespace LNUProject.Repositories.Interfaces
     {
         Cart Get(int id);
         bool ContainsId(int id);
-        IEnumerable<Cart> GetCartByUser(int id);
+        Cart GetCartByUser(int id);
     }
 }

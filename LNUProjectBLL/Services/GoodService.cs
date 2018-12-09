@@ -31,10 +31,8 @@ namespace LNUProjectBLL.Services
 
         public List<GoodDTO> GetGoods()
         {
-            var users = db.Goods.GetAll();
-            if (users == null)
-                return null;
             var dtos = new List<GoodDTO>();
+            var users = db.Goods.GetAll().ToList();
             foreach(var user in users)
             {
                 dtos.Add(new GoodDTO(user.Id,
@@ -44,6 +42,7 @@ namespace LNUProjectBLL.Services
                                      user.Quantity));
             }
             return dtos;
+
         }
 
         public List<GoodDTO> GetByCategories(int categoryid)
@@ -76,6 +75,22 @@ namespace LNUProjectBLL.Services
                                    user.Price,
                                    user.Quantity);
             }
+        }
+
+        public void  Add(GoodDTO good)
+        {
+            var name = good.CategoryName;
+            var category = db.Categories.TryGetByName(name);
+
+            Good dbgood = new Good();
+            //dbgood.Id = good.Id;
+            dbgood.Name = good.Name;
+            dbgood.CategoryId = category.Id;
+            dbgood.Price = good.Price;
+            dbgood.Quantity = good.Quantity;
+            db.Goods.Add(dbgood);
+
+            
         }
     }
 }

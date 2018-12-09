@@ -9,6 +9,8 @@ namespace LNUProject.Repositories.Interfaces
 {
     public interface ICartgoodRepository:IRepository<Cartgood>
     {
-        
+        Cartgood Get(int id);
+        Cartgood GetByCartId(int cartid);
+        Cartgood GetQuantity(int id);
     }
 }

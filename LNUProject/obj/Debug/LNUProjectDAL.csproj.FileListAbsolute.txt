@@ -20,7 +20,6 @@ C:\Users\Юра Костик\Desktop\WebPageProject\LNUProject\bin\Debug\EntityF
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProject\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProject\bin\Debug\EntityFramework.xml
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProject\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Юра Костик\Desktop\WebPageProject\LNUProject\obj\Debug\LNUProjectDAL.csprojAssemblyReference.cache
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProject\obj\Debug\LNUProject.Migrations.InitialCreate.resources
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProject\obj\Debug\LNUProject.Migrations.AddUserMigration.resources
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProject\obj\Debug\LNUProjectDAL.csproj.GenerateResource.cache
@@ -28,3 +27,4 @@ C:\Users\Юра Костик\Desktop\WebPageProject\LNUProject\obj\Debug\LNUProj
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProject\obj\Debug\LNUProjectDAL.csproj.CopyComplete
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProject\obj\Debug\LNUProject.exe
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProject\obj\Debug\LNUProject.pdb
+C:\Users\Юра Костик\Desktop\WebPageProject\LNUProject\obj\Debug\LNUProjectDAL.csprojAssemblyReference.cache

@@ -88,10 +88,11 @@ C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectBLL\bin\Debug\Unit
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectBLL\obj\Debug\LNUProjectBLL.csprojAssemblyReference.cache
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectBLL\obj\Debug\LNUProjectBLL.Form1.resources
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectBLL\obj\Debug\LNUProjectBLL.Form2.resources
+C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectBLL\obj\Debug\LNUProjectBLL.Form3.resources
+C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectBLL\obj\Debug\LNUProjectBLL.Form4.resources
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectBLL\obj\Debug\LNUProjectBLL.Properties.Resources.resources
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectBLL\obj\Debug\LNUProjectBLL.csproj.GenerateResource.cache
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectBLL\obj\Debug\LNUProjectBLL.csproj.CoreCompileInputs.cache
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectBLL\obj\Debug\LNUProjectBLL.csproj.CopyComplete
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectBLL\obj\Debug\LNUProjectBLL.exe
 C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectBLL\obj\Debug\LNUProjectBLL.pdb
-C:\Users\Юра Костик\Desktop\WebPageProject\LNUProjectBLL\obj\Debug\LNUProjectBLL.Form3.resources

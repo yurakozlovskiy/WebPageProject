@@ -18,5 +18,20 @@ namespace LNUProject.Repositories
         {
             return Context.Cartgoods.FirstOrDefault(cartgood => cartgood.Id == id);
         }
+
+        public Cartgood GetByCartId(int cartid)
+        {
+            return Context.Cartgoods.FirstOrDefault(cartgood => cartgood.CartId == cartid);
+        }
+
+      
+        public Cartgood GetQuantity(int id)
+        {
+            return Context.Cartgoods.FirstOrDefault(cartgood => cartgood.Id == id);
+        }
+
+        
+
+        
     }
 }

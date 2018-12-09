@@ -19,7 +19,10 @@ namespace LNUProjectBLL
 
 
             container.RegisterType<IAddressService, AddressService>();
+            container.RegisterType<ICartGoodService, CartGoodService>();
+            container.RegisterType<ICartService, CartService>();
             container.RegisterType<ICategoryService, CategoryService>();
+            container.RegisterType<IGoodService, GoodService>();
             container.RegisterType<IRoleService, RoleService>();
             container.RegisterType<IUserService, UserService>();
             container.RegisterType<IUnitOfWork, UnitOfWork>();

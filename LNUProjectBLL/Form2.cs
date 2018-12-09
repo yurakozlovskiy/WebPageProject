@@ -24,6 +24,7 @@ namespace LNUProjectBLL
             InitializeComponent();
             this.userService = userService;
             container = Boostraper.Init();
+            GetProfileId();
             ProfileDetails(userService);
         }
 
@@ -37,13 +38,14 @@ namespace LNUProjectBLL
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            this.Close();
+            
              
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Form3 form3 = container.Resolve<Form3>();
+            form3.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -51,24 +53,24 @@ namespace LNUProjectBLL
 
         }
 
-        public int GetProfileId()
+        public void GetProfileId()
         {
             string email = EmailDTO.Email;
             var user = userService.GetByEmail(email);
-            return user.Id;
-               
+            EmailDTO.Id = user.Id;   
         }
 
         public void ProfileDetails(IUserService userService)
         {
             string email = EmailDTO.Email;
             var user = userService.GetByEmail(email);
-            label1.Text = "Welcome back, " + user.Firstname+"!";
+            label1.Text =  " Welcome back, " + user.Firstname+"!";
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Form4 form4 = container.Resolve<Form4>();
+            form4.Show();
         }
     }
 }

@@ -22,9 +22,9 @@ namespace LNUProject.Repositories
             return Context.Carts.FirstOrDefault(cart => cart.Id == id);
         }
 
-        public IEnumerable<Cart> GetCartByUser(int id)
+        public Cart GetCartByUser(int id)
         {
-            return Context.Carts.Where(cart => cart.Id == id).ToList();
+            return Context.Carts.FirstOrDefault(cart => cart.UserId == id);
         }
     }
 }

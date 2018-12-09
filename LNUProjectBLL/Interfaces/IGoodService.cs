@@ -14,5 +14,6 @@ namespace LNUProjectBLL.Interfaces
         List<GoodDTO> GetGoods();
         GoodDTO GetByName(string name);
         List<GoodDTO> GetByCategories(int categoryid);
+        void Add(GoodDTO good);
     }
 }

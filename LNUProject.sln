@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LNUProjectBLL", "LNUProject
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LNUProjectDTO", "LNUProjectDTO\LNUProjectDTO.csproj", "{FB083B5A-1BBC-4859-B6C6-8F2B12BEBEBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LNUProjectWPFF", "LNUProjectWPFF\LNUProjectWPFF.csproj", "{4EB19848-F364-40E9-8B67-AA751C375B2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FB083B5A-1BBC-4859-B6C6-8F2B12BEBEBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB083B5A-1BBC-4859-B6C6-8F2B12BEBEBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB083B5A-1BBC-4859-B6C6-8F2B12BEBEBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EB19848-F364-40E9-8B67-AA751C375B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EB19848-F364-40E9-8B67-AA751C375B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EB19848-F364-40E9-8B67-AA751C375B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EB19848-F364-40E9-8B67-AA751C375B2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

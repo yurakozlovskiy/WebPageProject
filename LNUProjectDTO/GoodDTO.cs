@@ -12,6 +12,7 @@ namespace LNUProjectDTO
         {
             Id = id;
             Name = name;
+            CategoryName = categoryname;
             Price = price;
             Quantity = quantity;
         }

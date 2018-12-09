@@ -44,19 +44,18 @@ namespace LNUProjectBLL.Services
             return dtos;
         }
 
-        public List<CartDTO> GetCartByUser(int userid)
+        public CartDTO GetCartByUser(int userid)
         {
-            var users = db.Carts.GetCartByUser(userid);
-            if (users == null)
+            var user = db.Carts.GetCartByUser(userid);
+            if (user == null)
                 return null;
-            var dtos = new List<CartDTO>();
-            foreach(var user in users)
+            else
             {
-                dtos.Add(new CartDTO(user.Id,
-                                     user.User.Lastname,
-                                     user.Seller.Lastname));
+                return new CartDTO(user.Id,
+                                   user.User.Lastname,
+                                   user.Seller.Lastname);
             }
-            return dtos;
+            
         }
     }
 }
