@@ -24,6 +24,7 @@ namespace LNUProjectWPFF
         public int Price { get; set; }
         public int Quantity { get; set; }
 
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
         {

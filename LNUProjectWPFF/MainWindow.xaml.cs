@@ -58,6 +58,12 @@ namespace LNUProjectWPFF
         {
             DataGrid grid = sender as DataGrid;
             var item = (Goods)grid.SelectedItem;
+            var goodView = new UserModify(_goodsListView, goodsModifyViewModel, item);
+            goodView.ShowDialog();
+            if (goodView.DialogResult.HasValue && goodView.DialogResult.Value)
+            {
+                _goodsListView.Update();
+            }
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -69,7 +75,7 @@ namespace LNUProjectWPFF
         {
             var container = Boostraper.Init();
             var detailsViewModel = container.Resolve<GoodsListViewModel>();
-            var goodView = new UserModify(goodsModifyViewModel);
+            var goodView = new UserModify(_goodsListView,goodsModifyViewModel);
             goodView.ShowDialog();
             if(goodView.DialogResult.HasValue && goodView.DialogResult.Value)
             {

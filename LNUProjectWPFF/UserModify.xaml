@@ -6,6 +6,11 @@
         xmlns:local="clr-namespace:LNUProjectWPFF"
         mc:Ignorable="d"
         Title="Add new product" Height="450" Width="516">
+    <Window.Resources>
+        <CollectionViewSource 
+            Source="{Binding Path=GoodList}"
+            x:Key="GoodsCollection"/>
+    </Window.Resources>
     <Grid RenderTransformOrigin="0.76,0.482">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="6*"/>
@@ -17,13 +22,13 @@
         <Label Content="CategoryName" Grid.Column="2" HorizontalAlignment="Left" Margin="41,149,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.553,-1"/>
         <Label Content="Price" Grid.Column="2" HorizontalAlignment="Left" Margin="41,194,0,0" VerticalAlignment="Top"/>
         <Label Content="Quantity" Grid.Column="2" HorizontalAlignment="Left" Margin="43,246,0,0" VerticalAlignment="Top"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="188,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="IdText"  Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="188,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="NameText" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="188,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="PriceText" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="188,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="QuantityText" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="188,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="CategoryComboBox" Grid.Column="2" HorizontalAlignment="Left" Margin="188,149,0,0" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="OkButton" Click="OKButtonClick" Content="OK" Grid.Column="2" HorizontalAlignment="Left" Margin="50,310,0,0" VerticalAlignment="Top" Width="98" Height="34"/>
-        <Button x:Name="Cancel" IsCancel="True"  Grid.Column="2" HorizontalAlignment="Left" Margin="265,310,0,0" VerticalAlignment="Top" Width="99" Height="34"/>
+        <Button x:Name="Cancel" IsCancel="True"  Content="Cancel" Grid.Column="2" HorizontalAlignment="Left" Margin="265,310,0,0" VerticalAlignment="Top" Width="99" Height="34"/>
+        <TextBox x:Name="CategoryNameText" Grid.Column="2" HorizontalAlignment="Left" Height="22" Margin="188,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

@@ -8,12 +8,13 @@ using LNUProjectDTO;
 
 namespace LNUProjectBLL.Interfaces
 {
-    public interface IGoodService:IDisposable
+    public interface IGoodService:IDisposableService
     {
         GoodDTO Get(int id);
         List<GoodDTO> GetGoods();
         GoodDTO GetByName(string name);
         List<GoodDTO> GetByCategories(int categoryid);
         void Add(GoodDTO good);
+        void Update(GoodDTO good);
     }
 }

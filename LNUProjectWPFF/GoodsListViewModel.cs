@@ -14,6 +14,7 @@ namespace LNUProjectWPFF
     public class GoodsListViewModel : INotifyPropertyChanged
     {
         private IGoodService goodService;
+        private ICategoryService categoryService;
         private IMapper mapper;
         private ObservableCollection<Goods> goodList;
         public ObservableCollection<Goods>  GoodList
@@ -25,6 +26,7 @@ namespace LNUProjectWPFF
                 OnPropertyChanged(nameof(GoodList));
             }
         }
+        
 
        
         public event PropertyChangedEventHandler PropertyChanged;
@@ -33,23 +35,25 @@ namespace LNUProjectWPFF
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyname));
         }
 
-        public GoodsListViewModel(IGoodService goodService)
+        public GoodsListViewModel(IGoodService goodService,ICategoryService categoryService)
         {
             this.goodService = goodService;
+            this.categoryService = categoryService;
             var config = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<Goods, GoodDTO>();
             });
             mapper = config.CreateMapper();
+          
             Update();
 
         }
 
         public void Update()
         {
-            var good = goodService.Get(1);
             var goods = mapper.Map<List<Goods>>(goodService.GetGoods());
             GoodList = new ObservableCollection<Goods>(goods);
         }
+
     }
 }

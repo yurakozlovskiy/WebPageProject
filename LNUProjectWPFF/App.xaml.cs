@@ -17,14 +17,14 @@ namespace LNUProjectWPFF
     /// </summary>
     public partial class App : Application
     {
-        private IUnityContainer container;
        
         protected override void OnStartup(StartupEventArgs e)
         {
             var container = Boostraper.Init();
            
             GoodsListViewModel goodsListViewModel = container.Resolve<GoodsListViewModel>();
-            MainWindow window = new MainWindow(goodsListViewModel);
+            GoodsModifyViewModel goodsModifyViewModel = container.Resolve<GoodsModifyViewModel>();
+            MainWindow window = new MainWindow(goodsListViewModel, goodsModifyViewModel);
             window.Show();
         }
     }

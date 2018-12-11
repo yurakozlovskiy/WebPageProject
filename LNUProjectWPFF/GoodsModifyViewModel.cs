@@ -32,7 +32,12 @@ namespace LNUProjectWPFF
             good = FillData(good, name, categoryname, price,quantity);
             goodService.Add(mapper.Map<GoodDTO>(good));
         }
-        public void Update() { }
+
+        public void UpdateGood(Goods good)
+        {
+            goodService.Update(mapper.Map<GoodDTO>(good));
+
+        }
         public Goods FillData(Goods good, string name, string categoryname, int price, int quantity)
         {
             good.Name = name;

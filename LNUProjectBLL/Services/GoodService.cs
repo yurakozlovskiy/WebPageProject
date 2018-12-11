@@ -77,7 +77,7 @@ namespace LNUProjectBLL.Services
             }
         }
 
-        public void  Add(GoodDTO good)
+        public void Add(GoodDTO good)
         {
             var name = good.CategoryName;
             var category = db.Categories.TryGetByName(name);
@@ -89,8 +89,24 @@ namespace LNUProjectBLL.Services
             dbgood.Price = good.Price;
             dbgood.Quantity = good.Quantity;
             db.Goods.Add(dbgood);
+            db.Save();
 
             
+        }
+
+        public void Update(GoodDTO good)
+        {
+            var name = good.CategoryName;
+            var category = db.Categories.TryGetByName(name);
+            Good dbgood = db.Goods.Get(good.Id);
+
+            dbgood.Name = good.Name;
+            dbgood.CategoryId = category.Id;
+            dbgood.Price = good.Price;
+            dbgood.Quantity = good.Quantity;
+            db.Goods.Update(dbgood);
+            db.Save();
+
         }
     }
 }
